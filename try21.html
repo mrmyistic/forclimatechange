@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Video Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img0.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #video-container {
+            position: center;
+            overflow: auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #myVideo {
+            width: 75%;
+            height: 75%;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #text {
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0;
+            animation: slideIn 2s ease-in-out 1s forwards;
+        }
+
+        #content {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome</h1>
+        <p>Watch below video to understand the topic</p>
+    </div>
+    <div id="video-container">
+        <video id="myVideo" controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="content">
+        <p id="text">Climate control refers to the deliberate and strategic management of environmental conditions to achieve a desired and consistent climate within a specific space. This practice is particularly crucial in various sectors, including residential, commercial, and industrial settings, as it plays a pivotal role in maintaining comfort, preserving sensitive materials, and ensuring optimal functioning of equipment.
+
+            In the context of buildings and homes, climate control commonly involves heating, ventilation, and air conditioning (HVAC) systems. These systems regulate indoor temperature, humidity, and air quality to create a comfortable and healthy living or working environment. Energy-efficient climate control solutions are increasingly emphasized to mitigate the environmental impact and reduce energy consumption.
+            
+            Beyond individual structures, climate control also plays a critical role in specialized environments such as data centers, laboratories, and manufacturing facilities. Precise temperature and humidity control are essential in these settings to safeguard equipment, ensure the integrity of experiments, and maintain the quality of production processes.
+            
+            In a broader perspective, considering global climate change, the term "climate control" takes on an added dimension. It extends to collective efforts aimed at mitigating and adapting to the impacts of climate change on a planetary scale. This involves strategies like reducing greenhouse gas emissions, promoting sustainable practices, and developing technologies to address the challenges posed by a changing climate.
+            
+            In essence, whether on a local or global scale, climate control encompasses a range of practices and technologies aimed at creating and maintaining optimal environmental conditions for human comfort, health, and the preservation of critical processes and resources. As our understanding of climate dynamics deepens and environmental concerns grow, the importance of effective climate control measures continues to gain prominence.</p>
+    </div>
+    </div>
+</body>
+</html>

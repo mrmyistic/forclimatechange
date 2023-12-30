@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Video Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #video-container {
+            position: center;
+            overflow: auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #myVideo {
+            width: 75%;
+            height: 75%;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #text {
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0;
+            animation: slideIn 2s ease-in-out 1s forwards;
+        }
+
+        #content {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome</h1>
+        <p>Watch below video to understand the topic</p>
+    </div>
+    <div id="video-container">
+        <video id="myVideo" controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="content">
+        <p id="text">Climate control refers to the deliberate and systematic management of environmental conditions, particularly in enclosed spaces, to create and maintain a comfortable and suitable atmosphere for human habitation or for specific processes. It encompasses a range of technologies and practices aimed at regulating temperature, humidity, air quality, and ventilation.
+
+            In the context of buildings, climate control systems, such as heating, ventilation, and air conditioning (HVAC) systems, play a crucial role in ensuring occupants' well-being and productivity. These systems help maintain optimal indoor temperatures regardless of external weather conditions, offering warmth in cold seasons and cooling during hot periods. Moreover, they contribute to controlling humidity levels, preventing the growth of mold and ensuring a healthier indoor environment.
+            
+            Beyond buildings, climate control has broader implications in the face of global climate change. The term is also used in the context of mitigating and adapting to shifts in the Earth's climate. This involves international efforts, policies, and technologies aimed at reducing greenhouse gas emissions, conserving natural resources, and developing sustainable practices to minimize the impact of human activities on the planet's climate systems.
+            
+            Effective climate control, whether at the local or global scale, is essential for maintaining ecological balance, safeguarding human health, and promoting sustainability. As climate challenges continue to evolve, the development and implementation of innovative technologies and policies are crucial for fostering a resilient and harmonious relationship between human activities and the environment.</p>
+    </div>
+    </div>
+</body>
+</html>
