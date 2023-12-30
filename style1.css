@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px; /* Adjust the margin to control spacing */
+}
+
+.button-container2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px; /* Adjust the margin to control spacing */
+}
+
+.button {
+    display: inline-block;
+    padding: 25px 50px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
