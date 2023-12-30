@@ -8,6 +8,8 @@
         body {
             margin: 0;
             padding: 0;
+            justify-content: center;
+            align-items: center;
             background-image: url('img1.jpg');
             background-size: cover;
             background-position: center;
@@ -40,6 +42,30 @@
             text-align: center;
             padding: 20px;
             color: white;
+        }
+
+        .button-container1 {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px;
+            text-align: center;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 25px 50px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0000006f;
+            text-align: center;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+            text-align: center;
         }
 
         @keyframes fadeIn {
@@ -81,6 +107,9 @@
             Beyond buildings, climate control has broader implications in the face of global climate change. The term is also used in the context of mitigating and adapting to shifts in the Earth's climate. This involves international efforts, policies, and technologies aimed at reducing greenhouse gas emissions, conserving natural resources, and developing sustainable practices to minimize the impact of human activities on the planet's climate systems.
             
             Effective climate control, whether at the local or global scale, is essential for maintaining ecological balance, safeguarding human health, and promoting sustainability. As climate challenges continue to evolve, the development and implementation of innovative technologies and policies are crucial for fostering a resilient and harmonious relationship between human activities and the environment.</p>
+        <div class="button-container1">
+            <a href="https://youtube.com/@KazeXYT" class="button" id="Next">Next</a>
+        </div>
     </div>
     </div>
 </body>
